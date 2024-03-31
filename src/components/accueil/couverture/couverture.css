@@ -1,0 +1,92 @@
+.couv {
+  background-image: url("../../../../public/images/couverture.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+.couv .container {
+  padding-top: 10%;
+
+}
+.couv h1 {
+  color: #fff;
+  font-size: 60px;
+}
+.couv p {
+  color: #fff;
+  opacity: 0.8;
+}
+form {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 0 30px;
+  padding-right: 180px;
+  margin: 50px;
+  width: 110%;
+  margin-left: -50px;
+  margin-top: 70px;
+
+}
+form input {
+  padding: 10px;
+  width: 78%;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-right: -40px;
+  margin: 20px;
+
+}
+form select{
+  padding: 10px;
+  width: 120%;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-right: -40px;
+  margin: 20px;
+  margin-left: -20px;
+  
+}
+
+input::placeholder {
+  font-size: 17px;
+  color: black;
+}
+form .box {
+  padding: 10px;
+  
+}
+form .box:nth-child(1) {
+  border-left: none;
+}
+form h4 {
+  font-weight: 500;
+}
+#po{
+  margin-left: 30px;
+  margin-right: -200px;
+}
+#io{
+  color: red;
+  font-size: 11px;
+  
+}
+@media screen and (max-width: 800px) {
+  .hero .container {
+    padding-top: 30%;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form .box {
+    border-left: none;
+  }
+  form input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+#mimi{
+    width: 60%;
+    margin: -30px;
+    margin-left: 60px;
+}
+#mama{
+    width: 170%;
+}
+label{
+    font-size: 20px;
+    
+}
+#meme{
+    border: 1px solid #636060;
+    font-size: 15px;
+    width: 40%;
+    
+    
+}
+
+#meme:hover{
+    border: 2px solid #2a8b42;
+    font-size: 15px;
+
+}
+
+#momo:hover{
+    background-color: #1d5a2c;
+}
+#red{
+    color: red;
+    font-size: 12px;
+}
+#exe{
+    max-width: 70%;
+}
+
+  
+

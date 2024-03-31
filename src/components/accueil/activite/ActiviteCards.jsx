@@ -17,4 +17,4 @@ const ActiviteCards = () => {
   )
 }
 
-export default ActiviteCards
+export default ActiviteCards ;

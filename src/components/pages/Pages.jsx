@@ -22,7 +22,7 @@ const Pages = () => {
           <Route exact path='/services' component={Services} />
           <Route exact path='/galerie' component={Sary} />
           <Route exact path='/autres reservations' component={Autrereservations} />
-          <Route exact path='/salleconf' component={Salleconf} />
+          <Route exact path='/autres reservations/salleconf' component={Salleconf} />
           <Route exact path='/contact' component={Contact} />
         </Switch>
         <Footer />

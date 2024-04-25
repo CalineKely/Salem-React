@@ -26,6 +26,8 @@ const Salleconf = () => {
         Swal.fire("Données non enregistrés", "", "info");
       }
     });
+
+  }
   return (
     <>
       <section className='pricing mb'>
@@ -91,5 +93,5 @@ const Salleconf = () => {
     </>
   )
 }
-}
+
 export default Salleconf

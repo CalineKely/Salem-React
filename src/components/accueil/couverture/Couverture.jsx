@@ -16,11 +16,11 @@ const Couverture = () => {
         title: "Formulaire d'identité",
         html: `
         <label>Nom</label>
-          <input id="nom" className="swal2-input">
+          <input id="nom" className="swal-input1">
           <label>Prénom</label>
-          <input id="prenom" className="swal2-input">
+          <input id="prenom" className="swal-input2">
           <label>Phone</label>
-          <input id="phone" className="swal2-input">
+          <input id="phone" className="swal-input3">
         `,
         focusConfirm: false,
         preConfirm: () => {

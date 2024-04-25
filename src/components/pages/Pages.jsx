@@ -8,6 +8,7 @@ import Sary from "../sary/Sary"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
 import Autrereservations from "../autrereservations/Autrereservations"
+import Salleconf from "../autrereservations/Salleconf"
 
 
 const Pages = () => {
@@ -21,6 +22,7 @@ const Pages = () => {
           <Route exact path='/services' component={Services} />
           <Route exact path='/galerie' component={Sary} />
           <Route exact path='/autres reservations' component={Autrereservations} />
+          <Route exact path='/salleconf' component={Salleconf} />
           <Route exact path='/contact' component={Contact} />
         </Switch>
         <Footer />

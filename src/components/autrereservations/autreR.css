@@ -1,11 +1,4 @@
-#mimi{
-    width: 60%;
-    margin: -30px;
-    margin-left: 60px;
-}
-#mama{
-    width: 170%;
-}
+
 label{
     font-size: 20px;
     
@@ -13,9 +6,8 @@ label{
 #meme{
     border: 1px solid #636060;
     font-size: 15px;
-    width: 40%;
-    
-    
+    width: 70%;
+    margin: 10px;
 }
 
 #meme:hover{

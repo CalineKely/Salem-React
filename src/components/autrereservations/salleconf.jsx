@@ -36,7 +36,7 @@ const Salleconf = () => {
           
 
         <form onSubmit={handleSubmit(onSubmit)} id="plo">
-            <h2>RESERVATION DE LA SALLE DE CONFERENCE</h2>
+            <h2>Réservation de la salle de conférence</h2>
               <div>
                 <input type="text" placeholder='Name' {...register("nom", {required:true})} className="form-control" id="meme"/>
               <span className="text-danger" id="red">
@@ -73,7 +73,7 @@ const Salleconf = () => {
               </div>
               
               <div >
-              <label>Date de réservation</label>
+              <label>Date de réservation</label> <br />
                 <input type="date" placeholder="Date de réservation piscine" {...register("piscine", {required:true})} className="form-control"  id="meme"/>
                 <span className="text-danger" id="red">
                 {errors.piscine?.type==="required" && "Date obligatoire"}

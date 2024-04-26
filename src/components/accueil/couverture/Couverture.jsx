@@ -13,24 +13,23 @@ const Couverture = () => {
   const handleClick = () =>{
     (async () => {
       const { value: formValues } = await Swal.fire({
-        title: "Formulaire d'identité",
+        title: "Multiple inputs",
         html: `
-        <label>Nom</label>
-          <input id="nom" className="swal-input1">
-          <label>Prénom</label>
-          <input id="prenom" className="swal-input2">
-          <label>Phone</label>
-          <input id="phone" className="swal-input3">
+          <input id="nom" placeholder="Nom" class="swal2-input">
+          <input id="prenom" placeholder="Prénom" class="swal2-input">
+          <input id="phone" placeholder="Téléphone" class="swal2-input">
         `,
         focusConfirm: false,
         preConfirm: () => {
           return [
-            document.getElementById("swal-input1").value,
-            document.getElementById("swal-input2").value,
-            document.getElementById("swal-input3").value
+            document.getElementById("nom").value,
+            document.getElementById("prenom").value,
+            document.getElementById("phone").value
           ];
         }
       });
+
+      console.log("Données saisies :", formValues);
       if (formValues) {
         Swal.fire(JSON.stringify(formValues));
       }

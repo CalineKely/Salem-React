@@ -13,7 +13,7 @@ const Couverture = () => {
   const handleClick = () =>{
     (async () => {
       const { value: formValues } = await Swal.fire({
-        title: "Multiple inputs",
+        title: "Informations",
         html: `
           <input id="nom" placeholder="Nom" class="swal2-input">
           <input id="prenom" placeholder="Prénom" class="swal2-input">
@@ -67,9 +67,11 @@ const Couverture = () => {
                 <label className="form-lable">Chambres</label> <br></br>
                 <select {...register("chambre", {required:true})} className="form-control">
                   <option value="">--Please select--</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
+                  <option value="Male">Chambre simple</option>
+                  <option value="Female">Chambre familiale</option>
+                  <option value="Other">Suite nuptiale</option>
+                  <option value="Other">Chambre VIP</option>
+                  <option value="Other">Suite Présidentielle</option>
                 </select>
                 <span className="text-danger" id="io">
                   {errors.chambre?.type==="required"&&"Le type de chambre est obligatoire"}

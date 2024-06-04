@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Heading from "../../common/Heading";
 import "./couverture.css";
 import { useForm } from "react-hook-form";
@@ -9,6 +9,19 @@ const Couverture = () => {
   const [message, setMessage] = useState('');
 
   const { register, formState: { errors }, handleSubmit } = useForm();
+
+  useEffect(() => {
+    const logVisit = async () => {
+      try {
+        await axios.post("http://localhost:7000/api/logVisit");
+      } catch (error) {
+        console.error("Erreur lors de la journalisation de la visite:", error);
+      }
+    };
+
+    logVisit();
+  }, []);
+
 
   const onSubmit = async (data) => {
     try {
@@ -27,6 +40,8 @@ const Couverture = () => {
         <input id="nom" placeholder="Nom" class="swal2-input">
         <input id="prenom" placeholder="Prénom" class="swal2-input">
         <input id="phone" placeholder="Téléphone" class="swal2-input">
+        <input id="adresse" placeholder="Domicile" class="swal2-input">
+        <input id="gmail" placeholder="Email" class="swal2-input">
       `,
       focusConfirm: false,
       preConfirm: () => {
@@ -34,6 +49,8 @@ const Couverture = () => {
           nom: document.getElementById("nom").value,
           prenom: document.getElementById("prenom").value,
           phone: document.getElementById("phone").value,
+          adresse: document.getElementById("adresse").value,
+          gmail: document.getElementById("gmail").value,
         };
       }
     });

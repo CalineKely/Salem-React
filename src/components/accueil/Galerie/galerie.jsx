@@ -9,7 +9,7 @@ const Galerie = () => {
     <>
       
         <div className='container' id="lolo">
-          <Heading title='Notre galérie photos & vidéos' subtitle='Pour un aperçu de notre Hôtel' />
+          <Heading title='Notre galérie photo' subtitle='Pour un aperçu de notre Hôtel' />
           
           <div className="media-container" id="lili">
             {

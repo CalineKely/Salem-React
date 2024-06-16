@@ -28,6 +28,7 @@ const Salleconf = () => {
     });
   };
 
+
   return (
     <>
       <section className='pricing mb'>

@@ -13,14 +13,18 @@ const Couverture = () => {
   useEffect(() => {
     const logVisit = async () => {
       try {
-        await axios.post("http://localhost:7000/api/logVisit");
+        const response = await axios.post("http://localhost:7000/api/logVisit");
+        setMessage(response.data);
       } catch (error) {
         console.error("Erreur lors de la journalisation de la visite:", error);
+        setMessage(error.response ? error.response.data : "Erreur inconnue");
       }
     };
 
     logVisit();
   }, []);
+
+
 
 
   const onSubmit = async (data) => {
